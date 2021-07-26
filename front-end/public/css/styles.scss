@@ -1,0 +1,460 @@
+$lable-bg: #1e1f21;
+$font-green: #2bc20e;
+$dark-green: #0c8900;
+$back-ground: #010b12;
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+.copy-text {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.page-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+body {
+  color: $font-green;
+  background-color: $lable-bg;
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
+}
+body::-webkit-scrollbar {
+  width: 1rem !important;
+}
+body::-webkit-scrollbar-track {
+  background: $lable-bg !important;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $font-green !important;
+
+  border-radius: 1px !important;
+  border: 1px solid $font-green !important;
+}
+.form {
+  width: 100%;
+  max-width: 380px;
+  padding: 15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+}
+.logo-images {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 1rem;
+}
+.form-control {
+  border-color: $dark-green;
+  color: $font-green;
+  height: 45px;
+  border-width: 1px;
+  background: $lable-bg;
+  margin-top: 4px;
+}
+.form-control::selection {
+  background-color: $dark-green;
+  color: white;
+}
+.form-control:focus {
+  background: $lable-bg;
+  border-color: $font-green;
+  color: $font-green;
+}
+.form-control:not(:first-child) {
+  margin-bottom: 4px;
+}
+.copyright {
+  padding: 0;
+  margin: 0.2rem !important;
+  font-size: 1rem;
+  color: $dark-green;
+}
+.text-center {
+  text-align: center;
+}
+.Alink {
+  text-align: center;
+  color: $dark-green;
+  font-size: 1.1rem;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.Alink:hover {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: $font-green;
+  font-size: 1.1rem;
+}
+.Simpletext {
+  margin-right: 20px;
+}
+.clock-container {
+  width: 100vw;
+  text-align: center;
+}
+.clock-font {
+  margin-right: 5px;
+}
+//navbar
+.topnav {
+  overflow: hidden;
+  background-color: $lable-bg;
+  border-style: solid;
+  border-width: thin;
+  border-color: $font-green;
+  border-left: 0;
+  border-right: 0;
+  padding: 10px;
+  .navbar-brand {
+    font-weight: bold;
+  }
+  .nav-image {
+    margin-right: 5px;
+    height: 30px;
+  }
+  .navbar-brand:hover {
+    background-color: $lable-bg;
+    color: $font-green;
+  }
+  a {
+    float: left;
+    display: block;
+    color: $font-green;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  a:not(:first-child) {
+    margin-left: 4px;
+  }
+  a:hover {
+    transition: background-color 0.5s;
+    background-color: $font-green;
+    color: $back-ground;
+    border-radius: 5px;
+  }
+  .active {
+    background-color: $font-green;
+    color: $back-ground;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .active:hover {
+    background-color: $font-green;
+    color: $back-ground;
+  }
+  .icon {
+    display: none;
+    color: $dark-green;
+    border-style: none;
+  }
+  .logout {
+    color: red;
+  }
+  .logout:hover {
+    color: white;
+    background-color: red;
+  }
+}
+@media screen and (max-width: 980px) {
+  .topnav {
+    a {
+      display: none;
+    }
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .topnav.responsive {
+    position: relative;
+    z-index: 1;
+  }
+  .topnav.responsive .icon {
+    position: relative;
+    float: right;
+    color: $font-green;
+    border-style: none;
+    margin-right: 12px;
+    transition: background-color 0.5s;
+  }
+  .topnav.responsive .icon:hover {
+    color: $back-ground;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    border-style: none !important;
+  }
+  .navbar-brand {
+    float: left;
+    display: block !important;
+  }
+}
+.swal2-container {
+  .swal2-popup {
+    border-style: solid;
+    border-color: $font-green !important;
+    border-width: thin;
+    background-color: $lable-bg !important;
+    .swal2-title {
+      color: $font-green !important;
+      font-weight: lighter;
+    }
+    .swal2-html-container {
+      color: $font-green;
+    }
+  }
+}
+.navbar-responsive {
+  width: 100vw;
+  position: absolute;
+  z-index: 2;
+}
+
+.form-control::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  background-color: $font-green;
+  color: $font-green !important;
+}
+#date::-webkit-calendar-picker-indicator {
+  visibility: hidden !important;
+}
+
+.react-datepicker-wrapper {
+  display: block !important;
+  margin-bottom: 8px;
+}
+.react-datepicker-popper {
+  .react-datepicker {
+    border: thin solid $font-green;
+    .react-datepicker__triangle {
+      border: thin solid $font-green !important;
+      border-bottom-color: $font-green;
+    }
+    .react-datepicker__navigation--next {
+      border-left-color: $font-green;
+    }
+    .react-datepicker__navigation--previous {
+      border-right-color: $font-green;
+    }
+    .react-datepicker__month-container {
+      color: $font-green !important;
+      .react-datepicker__header {
+        border: thin solid $font-green;
+        background-color: $lable-bg !important;
+        color: $font-green !important;
+        .react-datepicker__current-month {
+          color: $font-green;
+        }
+        .react-datepicker__day-name {
+          color: $font-green !important;
+        }
+      }
+      .react-datepicker__month {
+        margin: 0 !important;
+        border: thin solid $font-green;
+        background-color: $lable-bg !important;
+        color: $font-green !important;
+        .react-datepicker__week {
+          .react-datepicker__day {
+            margin: 0 !important;
+            border: thin solid $font-green;
+            border-radius: 4px;
+            color: $font-green !important;
+          }
+          .react-datepicker__day:hover {
+            background-color: $font-green !important;
+            color: $back-ground !important;
+          }
+          .react-datepicker__day--keyboard-selected {
+            background-color: $font-green !important;
+            color: $back-ground !important;
+          }
+          .react-datepicker__day--selected {
+            background-color: $font-green !important;
+            color: $back-ground !important;
+          }
+          .react-datepicker__day--disabled {
+            border: thin solid $back-ground !important;
+            color: $back-ground !important;
+          }
+          .react-datepicker__day--disabled:hover {
+            background-color: $lable-bg !important;
+            color: $back-ground !important;
+          }
+        }
+      }
+    }
+  }
+}
+.container {
+  padding: 0 !important;
+}
+.item-container {
+  position: absolute;
+  background-color: $lable-bg;
+  z-index: 1;
+  width: 100%;
+  border: thin solid $font-green;
+  font-size: 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 200px;
+  .item:not(:first-child) {
+    border-top: thin solid $font-green;
+  }
+  .item:hover {
+    background-color: $font-green;
+    color: $back-ground;
+  }
+}
+.item-container::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.item-container::-webkit-scrollbar-track {
+  background-color: $lable-bg;
+}
+.item-container::-webkit-scrollbar-thumb {
+  background-color: $font-green;
+}
+.find-train-form {
+  display: inline;
+  position: static !important;
+  font-size: 0.8rem !important;
+  margin: 10px;
+  .row {
+    .col {
+      padding: 0 !important;
+    }
+  }
+}
+.form-index {
+  max-width: 320px !important;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translate(0, 50%);
+  .col {
+    padding: 0 !important;
+  }
+}
+.booking-ticket-container {
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+  .row {
+    .col {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    .book-ticket-nav-image {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+.train-details-container {
+  border: thin solid $font-green;
+  .container {
+    padding: 1rem !important;
+    font-size: 1rem;
+    .row {
+      .col {
+        .item-title {
+          color: $font-green;
+          margin-bottom: 0 !important;
+          font-weight: bold;
+        }
+        .item-value {
+          color: $font-green;
+          font-weight: lighter;
+        }
+      }
+      .button {
+        margin-top: 2rem !important;
+      }
+    }
+  }
+}
+.button-ticket-center {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.not-found-text {
+  color: red !important;
+}
+.train-details-container:not(:first-child) {
+  margin-top: 0.8rem;
+  border-radius: 5px;
+}
+.passanger-details {
+  border: thin solid $font-green;
+  width: 700px;
+  z-index: 1;
+  background-color: $lable-bg !important;
+  padding: 0.8rem !important;
+  margin-right: auto;
+  margin-left: auto;
+}
+.passanger-details-invisible {
+  visibility: hidden;
+  border: thin solid $font-green;
+  width: 700px;
+  background-color: $lable-bg;
+  padding: 0.8rem !important;
+  margin-right: auto;
+  margin-left: auto;
+}
+.fa-times {
+  color: $font-green !important;
+}
+.train-booked-container {
+  border: thin solid $font-green;
+  padding: 0.9rem !important;
+  border-radius: 5px;
+  .container {
+    padding: 1rem !important;
+    font-size: 1rem;
+    .row {
+      .col {
+      }
+      .button {
+        margin-top: 2rem !important;
+      }
+    }
+  }
+}
+.train-booked-container:not(:first-child) {
+  margin-top: 2rem;
+}
+.item-title {
+  color: $font-green;
+  margin-bottom: 0 !important;
+  font-weight: bold;
+}
+.item-value {
+  color: $font-green;
+  font-weight: lighter;
+}

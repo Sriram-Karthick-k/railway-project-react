@@ -1,0 +1,55 @@
+{
+  "name": "railway-project-react",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3001",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.1.2",
+    "@testing-library/user-event": "^12.2.2",
+    "axios": "^0.21.0",
+    "http-proxy-middleware": "^1.0.6",
+    "jquery": "^3.5.1",
+    "js-cookie": "^2.2.1",
+    "mongoose": "^5.10.14",
+    "node-sass": "^5.0.0",
+    "query-string": "^6.13.7",
+    "react": "^17.0.1",
+    "react-datepicker": "^3.3.0",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.0",
+    "superagent": "^6.1.0",
+    "sweetalert2": "^10.10.1",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "sstart": "node-sass public/css/styles.scss public/css/styles.css -w"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "setupProxy.js",
+  "author": "",
+  "license": "ISC"
+}
